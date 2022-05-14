@@ -9,13 +9,16 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    login_tela.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
+    login_tela.h \
     mainwindow.h
 
 FORMS += \
+    login_tela.ui \
     mainwindow.ui
 
 # Default rules for deployment.
