@@ -11,15 +11,18 @@ CONFIG += c++17
 SOURCES += \
     login_tela.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    marcar_horario.cpp
 
 HEADERS += \
     login_tela.h \
-    mainwindow.h
+    mainwindow.h \
+    marcar_horario.h
 
 FORMS += \
     login_tela.ui \
-    mainwindow.ui
+    mainwindow.ui \
+    marcar_horario.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
