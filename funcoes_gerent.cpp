@@ -1,3 +1,9 @@
+#include "funcoes_gerent.h"
+
+funcoes_gerent::funcoes_gerent()
+{
+
+}
 #include "marcar_horario.h"
 #include "ui_marcar_horario.h"
 
@@ -12,9 +18,3 @@ Marcar_Horario::~Marcar_Horario()
 {
     delete ui;
 }
-
-void Marcar_Horario::on_pushButton_2_clicked()
-{
-    this->close();
-}
-

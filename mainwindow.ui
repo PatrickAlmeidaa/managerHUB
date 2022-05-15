@@ -58,6 +58,25 @@
       <height>31</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+	font: 12pt &quot;Segoe UI&quot;;
+	color: rgb(100, 100, 100);
+	border: 2px solid rgb(45, 45, 45);
+	border-radius: 5px;
+	padding: 15px;
+	background-color: rgb(30, 30, 30);
+}
+
+QLineEdit:hover{
+	border: 2px solid rgb(55, 55, 55);
+}
+
+QLineEdit:focus{
+	border: 2px solid rgb(44, 97, 181);
+	color: rgb(255, 255, 255);
+}</string>
+    </property>
     <property name="text">
      <string>Marcar Compromissos</string>
     </property>

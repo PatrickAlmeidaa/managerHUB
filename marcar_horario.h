@@ -15,6 +15,9 @@ public:
     explicit Marcar_Horario(QWidget *parent = nullptr);
     ~Marcar_Horario();
 
+private slots:
+    void on_pushButton_2_clicked();
+
 private:
     Ui::Marcar_Horario *ui;
 };

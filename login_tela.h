@@ -15,6 +15,10 @@ public:
     explicit login_tela(QWidget *parent = nullptr);
     ~login_tela();
 
+private slots:
+
+    void on_pushButton_clicked();
+
 private:
     Ui::login_tela *ui;
 };
