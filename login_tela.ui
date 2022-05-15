@@ -20,7 +20,7 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true"/>
+   <string notr="true">background-color: rgb(147, 128, 255);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLineEdit" name="lineEdit">
@@ -100,7 +100,8 @@ QLineEdit:focus{
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 12pt &quot;Segoe UI&quot;;</string>
+     <string notr="true">font: 12pt &quot;Segoe UI&quot;;
+color: rgb(0, 0, 0);</string>
     </property>
     <property name="text">
      <string>Entrar</string>
@@ -113,7 +114,7 @@ QLineEdit:focus{
      <x>0</x>
      <y>0</y>
      <width>700</width>
-     <height>21</height>
+     <height>25</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuLogin">
