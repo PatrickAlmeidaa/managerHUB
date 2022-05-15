@@ -24,6 +24,7 @@ void gerent::on_pushButton_clicked()
 void gerent::on_pushButton_3_clicked()
 {
     Marcar_Horario m;
+    this->close();
     m.exec();
     //j.close();
 }

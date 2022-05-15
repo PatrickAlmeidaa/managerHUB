@@ -27,9 +27,10 @@ void login_tela::on_pushButton_clicked()
         Marcar_Horario j;
         gerent g;
 
+        this->close();
 
         g.exec();
-        this->close();
+
     }
     else{
         QMessageBox::warning(this,"Login","Username ou senha incorretas");

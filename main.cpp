@@ -1,4 +1,3 @@
-#include "gerent_funcoes.h"
 #include "login_tela.h"
 #include "marcar_horario.h"
 #include "gerent.h"

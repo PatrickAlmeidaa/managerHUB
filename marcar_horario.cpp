@@ -1,5 +1,6 @@
 #include "marcar_horario.h"
 #include "ui_marcar_horario.h"
+#include "gerent.h"
 
 Marcar_Horario::Marcar_Horario(QWidget *parent) :
     QDialog(parent),
@@ -15,6 +16,8 @@ Marcar_Horario::~Marcar_Horario()
 
 void Marcar_Horario::on_pushButton_2_clicked()
 {
+    gerent g;
     this->close();
+    g.exec();
 }
 
