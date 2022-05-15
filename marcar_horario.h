@@ -18,6 +18,8 @@ public:
 private slots:
     void on_pushButton_2_clicked();
 
+    void on_Agendar_clicked();
+
 private:
     Ui::Marcar_Horario *ui;
 };

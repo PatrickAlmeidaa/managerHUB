@@ -1,6 +1,10 @@
 #include "marcar_horario.h"
 #include "ui_marcar_horario.h"
 #include "gerent.h"
+#include "iostream"
+#include <QMessageBox>
+
+using namespace std;
 
 Marcar_Horario::Marcar_Horario(QWidget *parent) :
     QDialog(parent),
@@ -19,5 +23,17 @@ void Marcar_Horario::on_pushButton_2_clicked()
     gerent g;
     this->close();
     g.exec();
+}
+
+
+void Marcar_Horario::on_Agendar_clicked()
+{
+    QString desc = ui->lineEdit->text();
+    QString data = ui->dateEdit->text();
+    QString hora = ui->timeEdit->text();
+
+    if(desc == ""){
+         QMessageBox::warning(this,"Descrição","Descrição Invalida");
+    }
 }
 

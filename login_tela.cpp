@@ -23,7 +23,7 @@ void login_tela::on_pushButton_clicked()
 
     if(username == "gerent" && senha == "123"){
         //MainWindow form;
-        QMessageBox::information(this,"Loguin","Feito com sucesso");
+        QMessageBox::information(this,"Login","Feito com sucesso");
         Marcar_Horario j;
         gerent g;
 
