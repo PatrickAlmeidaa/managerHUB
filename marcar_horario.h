@@ -1,7 +1,12 @@
 #ifndef MARCAR_HORARIO_H
 #define MARCAR_HORARIO_H
 
-#include <QDialog>
+#include "gerent.h"
+#include "ui_marcar_horario.h"
+
+#include <QMessageBox>
+#include <QtSql>
+#include <QSqlQuery>
 
 namespace Ui {
 class Marcar_Horario;

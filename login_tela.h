@@ -2,6 +2,8 @@
 #define LOGIN_TELA_H
 
 #include <QMainWindow>
+#include <QMessageBox>
+#include "gerent.h"
 
 namespace Ui {
 class login_tela;

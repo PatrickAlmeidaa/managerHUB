@@ -1,6 +1,6 @@
 #include "gerent.h"
 #include "ui_gerent.h"
-//#include "main.cpp"
+#include "exibir.h"
 #include "marcar_horario.h"
 
 gerent::gerent(QWidget *parent) :
@@ -27,5 +27,12 @@ void gerent::on_pushButton_3_clicked()
     this->close();
     m.exec();
     //j.close();
+}
+
+
+void gerent::on_pushButton_2_clicked()
+{
+    exibir e;
+    e.exec();
 }
 
