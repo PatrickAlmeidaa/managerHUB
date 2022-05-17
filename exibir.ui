@@ -26,8 +26,7 @@
    <string>Dialog</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">color: rgb(0, 0, 0);
-background-color: rgb(146, 153, 255);</string>
+   <string notr="true"/>
   </property>
   <widget class="QTableWidget" name="tableWidget">
    <property name="geometry">
@@ -40,7 +39,8 @@ background-color: rgb(146, 153, 255);</string>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(0, 0, 0);
-background-color: rgb(225, 225, 225);</string>
+background-color: rgb(225, 225, 225);
+border-radius: 5px;</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton">
@@ -53,13 +53,59 @@ background-color: rgb(225, 225, 225);</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(0, 0, 0);
-background-color: rgb(225, 225, 225);</string>
+    <string notr="true">font: 12pt &quot;Segoe UI&quot;;
+</string>
    </property>
    <property name="text">
     <string>Voltar</string>
    </property>
   </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>0</y>
+     <width>261</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 5px;
+font: 18pt &quot;Arial&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Lista de Compromissos</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>-2</x>
+     <y>-5</y>
+     <width>700</width>
+     <height>500</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>700</width>
+     <height>500</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../../Downloads/fundo-lilas.jpg</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <zorder>label_2</zorder>
+  <zorder>tableWidget</zorder>
+  <zorder>pushButton</zorder>
+  <zorder>label</zorder>
  </widget>
  <resources/>
  <connections/>

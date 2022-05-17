@@ -1,4 +1,5 @@
 #include "marcar_horario.h"
+#include "ui_marcar_horario.h"
 
 QSqlDatabase banco = QSqlDatabase::addDatabase("QSQLITE");
 
@@ -8,8 +9,8 @@ Marcar_Horario::Marcar_Horario(QWidget *parent) :
 {
     ui->setupUi(this);
     banco.setDatabaseName("C:/Users/erick/Documents/Bancodedados/banco.db");
-
     banco.open();
+
 }
 Marcar_Horario::~Marcar_Horario()
 {
@@ -28,8 +29,9 @@ void Marcar_Horario::on_Agendar_clicked()
     QString hora = ui->timeEdit->text();
 
     QSqlQuery query;
+    QSqlQuery q;
     QString aux;
-    query.prepare("insert into tb_agenda (Descricao,Data,Hora) values"
+    q.prepare("insert into tb_agenda (Descricao,Data,Hora) values"
                  "('"+desc+"','"+data+"','"+hora+"')");
 
     query.prepare("select * from tb_agenda");
@@ -37,7 +39,11 @@ void Marcar_Horario::on_Agendar_clicked()
     if(query.exec()){
 
         int cont=0;
+        //int test =0;
         bool test = false;
+        if(desc == ""){
+            test = 1;
+        }
 
         while(query.next()){
 
@@ -51,18 +57,25 @@ void Marcar_Horario::on_Agendar_clicked()
             }
             cont++;
         }
-        if(test == false){
-            QMessageBox::warning(this,"Conflito","Horario Indisponivel");
+        if(test == false && desc == ""){
+             QMessageBox::warning(this,"Descrição Invalida","Favor Inserir uma Descrição Validade");
+             ui->lineEdit->clear();
+             ui->lineEdit->setFocus();
         }
-        else if(desc == ""){
-             QMessageBox::warning(this,"Descrição","Descrição Invalida");
+        else if(test == true && desc == ""){
+             QMessageBox::warning(this,"Descrição Invalida","Favor Inserir uma Descrição Validade");
+             ui->lineEdit->clear();
+             ui->lineEdit->setFocus();
         }
-        else{
+        else if(test == false){
+             QMessageBox::warning(this,"Conflito de Horarios",aux+" ja esta marcado nesse mesmo dia e horario");
+        }
+        else if(test == true){
              QMessageBox::warning(this,"Cadastro","Feito com Sucesso");
-         query.exec();
+             q.exec();
+             ui->lineEdit->clear();
+             ui->lineEdit->setFocus();
         }
     }
-    ui->lineEdit->clear();
-    ui->lineEdit->setFocus();
 }
 

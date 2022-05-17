@@ -2,7 +2,6 @@
 #define MARCAR_HORARIO_H
 
 #include "gerent.h"
-#include "ui_marcar_horario.h"
 
 #include <QMessageBox>
 #include <QtSql>

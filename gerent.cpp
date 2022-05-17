@@ -26,13 +26,13 @@ void gerent::on_pushButton_3_clicked()
     Marcar_Horario m;
     this->close();
     m.exec();
-    //j.close();
 }
 
 
 void gerent::on_pushButton_2_clicked()
 {
     exibir e;
+    this->close();
     e.exec();
 }
 

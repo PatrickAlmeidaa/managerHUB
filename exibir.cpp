@@ -2,10 +2,12 @@
 #include "ui_exibir.h"
 #include "marcar_horario.h"
 #include "gerent.h"
-
+#include "marcar_horario.h"
 #include <QtSql>
 #include <QMessageBox>
 #include <QAbstractItemView>
+
+//QSqlDatabase banco = QSqlDatabase::addDatabase("QSQLITE");
 
 exibir::exibir(QWidget *parent) :
     QDialog(parent),
@@ -26,8 +28,8 @@ exibir::exibir(QWidget *parent) :
             ui->tableWidget->setRowHeight(cont,20);
             cont++;
         }
-        ui->tableWidget->setColumnWidth(0,300);
-        ui->tableWidget->setColumnWidth(1,200);
+        ui->tableWidget->setColumnWidth(0,400);
+        ui->tableWidget->setColumnWidth(1,100);
         ui->tableWidget->setColumnWidth(2,121);
         QStringList cabecalhos={"Descrição","Data","Hora"};
         ui->tableWidget->setHorizontalHeaderLabels(cabecalhos);
@@ -35,6 +37,9 @@ exibir::exibir(QWidget *parent) :
         ui->tableWidget->setEditTriggers(QAbstractItemView::NoEditTriggers);
         ui->tableWidget->setSelectionBehavior(QAbstractItemView::SelectRows);
         ui->tableWidget->verticalHeader()->setVisible(false);
+
+        //query.prepare("select Data, from tb_agenda order by Data");
+        //query.exec();
 
     }
     else{
