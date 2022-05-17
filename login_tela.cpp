@@ -34,3 +34,9 @@ void login_tela::on_pushButton_clicked()
     }
 }
 
+
+void login_tela::on_pushButton_2_clicked()
+{
+   this->close();
+}
+

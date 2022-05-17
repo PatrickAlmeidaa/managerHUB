@@ -2,6 +2,7 @@
 #include "ui_gerent.h"
 #include "exibir.h"
 #include "marcar_horario.h"
+#include "login_tela.h"
 
 gerent::gerent(QWidget *parent) :
     QDialog(parent),

@@ -39,7 +39,8 @@ background-color: rgb(146, 153, 255);</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(118, 89, 153);</string>
+    <string notr="true">background-color: rgb(142, 142, 212);
+</string>
    </property>
    <property name="frameShape">
     <enum>QFrame::StyledPanel</enum>
@@ -58,6 +59,7 @@ background-color: rgb(146, 153, 255);</string>
     </property>
     <property name="styleSheet">
      <string notr="true">border-radius: 5px;
+color: rgb(255, 255, 255);
 font: 16pt &quot;Arial&quot;;</string>
     </property>
     <property name="text">
@@ -137,8 +139,9 @@ background-color: rgb(225, 225, 225);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(93, 93, 93);
-color: rgb(217, 214, 211);</string>
+     <string notr="true">color: rgb(217, 214, 211);
+color: rgb(0, 0, 0);
+background-color: rgb(217, 217, 217);</string>
     </property>
     <property name="text">
      <string>Agendar</string>
@@ -186,8 +189,9 @@ border-radius: 5px;
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(93, 93, 93);
-color: rgb(217, 214, 211);</string>
+     <string notr="true">color: rgb(217, 214, 211);
+color: rgb(0, 0, 0);
+background-color: rgb(217, 217, 217);</string>
     </property>
     <property name="text">
      <string>Voltar</string>

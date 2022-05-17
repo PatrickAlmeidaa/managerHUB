@@ -77,7 +77,7 @@
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>300</x>
+     <x>290</x>
      <y>390</y>
      <width>121</width>
      <height>31</height>
@@ -109,7 +109,7 @@
    </property>
    <property name="styleSheet">
     <string notr="true">border-radius: 5px;
-color: rgb(31, 31, 31);
+color: rgb(255, 255, 255);
 font: 18pt &quot;Arial&quot;;</string>
    </property>
    <property name="text">

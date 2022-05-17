@@ -71,6 +71,7 @@ border-radius: 5px;</string>
    </property>
    <property name="styleSheet">
     <string notr="true">border-radius: 5px;
+color: rgb(255, 255, 255);
 font: 18pt &quot;Arial&quot;;</string>
    </property>
    <property name="text">

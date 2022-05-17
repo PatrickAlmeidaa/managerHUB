@@ -43,7 +43,7 @@ exibir::exibir(QWidget *parent) :
 
     }
     else{
-         QMessageBox::warning(this,"Erro","ao lista");
+         QMessageBox::warning(this,"Acesso","Acesse a area de agendamento");
     }
 }
 exibir::~exibir()
