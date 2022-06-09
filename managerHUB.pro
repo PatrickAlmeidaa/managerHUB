@@ -10,6 +10,7 @@ CONFIG += c++17
 
 SOURCES += \
     exibir.cpp \
+    exibir2.cpp \
     gerent.cpp \
     login_tela.cpp \
     main.cpp \
@@ -17,12 +18,14 @@ SOURCES += \
 
 HEADERS += \
     exibir.h \
+    exibir2.h \
     gerent.h \
     login_tela.h \
     marcar_horario.h
 
 FORMS += \
     exibir.ui \
+    exibir2.ui \
     gerent.ui \
     login_tela.ui \
     marcar_horario.ui

@@ -139,6 +139,22 @@ border-top-color: rgb(42, 42, 42);</string>
     <bool>true</bool>
    </property>
   </widget>
+  <widget class="QPushButton" name="pushButton_5">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>230</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;Segoe UI&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Buscar Compromissos</string>
+   </property>
+  </widget>
   <zorder>label</zorder>
   <zorder>menubar</zorder>
   <zorder>statusbar</zorder>
@@ -146,6 +162,7 @@ border-top-color: rgb(42, 42, 42);</string>
   <zorder>pushButton_2</zorder>
   <zorder>pushButton</zorder>
   <zorder>pushButton_4</zorder>
+  <zorder>pushButton_5</zorder>
  </widget>
  <resources/>
  <connections/>

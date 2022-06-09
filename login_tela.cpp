@@ -17,7 +17,7 @@ void login_tela::on_pushButton_clicked()
 {
     QString username = ui->lineEdit->text();
     QString senha = ui->lineEdit_2->text();
-
+    /*
     if(username == "gerent" && senha == "123"){
         QMessageBox::information(this,"Login","Feito com sucesso");
         gerent g;
@@ -31,9 +31,12 @@ void login_tela::on_pushButton_clicked()
         ui->lineEdit->clear();
         ui->lineEdit_2->clear();
         ui->lineEdit->setFocus();
-    }
-}
+    }*/
+    gerent g;
+        this->close();
 
+        g.exec();
+}
 
 void login_tela::on_pushButton_2_clicked()
 {

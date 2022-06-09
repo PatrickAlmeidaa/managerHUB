@@ -19,19 +19,21 @@ exibir::exibir(QWidget *parent) :
     query.prepare("select * from tb_agenda");
     if(query.exec()){
         int cont=0;
-        ui->tableWidget->setColumnCount(3);
+        ui->tableWidget->setColumnCount(4);
         while(query.next()){
             ui->tableWidget->insertRow(cont);
             ui->tableWidget->setItem(cont,0,new QTableWidgetItem(query.value(0).toString()));
             ui->tableWidget->setItem(cont,1,new QTableWidgetItem(query.value(1).toString()));
             ui->tableWidget->setItem(cont,2,new QTableWidgetItem(query.value(2).toString()));
+            ui->tableWidget->setItem(cont,3,new QTableWidgetItem(query.value(3).toString()));
             ui->tableWidget->setRowHeight(cont,20);
             cont++;
         }
         ui->tableWidget->setColumnWidth(0,400);
         ui->tableWidget->setColumnWidth(1,100);
         ui->tableWidget->setColumnWidth(2,121);
-        QStringList cabecalhos={"Descrição","Data","Hora"};
+        ui->tableWidget->setColumnWidth(3,121);
+        QStringList cabecalhos={"Descrição","Data","Hora de Inicio","Hora de Termino"};
         ui->tableWidget->setHorizontalHeaderLabels(cabecalhos);
         ui->tableWidget->setStyleSheet("QTableView {selection-background-color:rgb(177,156,217)}");
         ui->tableWidget->setEditTriggers(QAbstractItemView::NoEditTriggers);
