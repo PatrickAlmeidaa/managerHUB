@@ -5,6 +5,6 @@ Projeto desenvolvido na disciplina de Engenharia de Software II. O projeto tem o
 O aplicativo desktop foi desenvolvido a ferramenta Qt Creator em C++.
 
 Integrantes do projeto:
-1 - Patrick - https://github.com/PatrickAlmeidaa
-2 - Erick - https://github.com/Erickjbf
-3 - Gabriel - https://github.com/GabrielMoraeswolf
+1 - [Patrick] - https://github.com/PatrickAlmeidaa
+2 - [Erick] - https://github.com/Erickjbf
+3 - [Gabriel] - https://github.com/GabrielMoraeswolf
